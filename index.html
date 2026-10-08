@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gladiator AI — Arena</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="toast" class="toast"></div>
+<div class="app">
+<aside class="sidebar" id="sidebar">
+  <div class="brand"><span class="brand-mark">⚔</span><div>GLADIATOR<small>AI ARENA</small></div></div>
+  <button class="primary" id="newChat">＋ Pertarungan Baru</button>
+  <div class="section">RIWAYAT ARENA</div><div id="history" class="history"></div>
+  <div class="side-bottom">
+    <button data-page="glory">🏆 <span>Papan Kemuliaan</span></button>
+    <button data-page="settings">⚙️ <span>Pengaturan</span></button>
+    <button data-page="profile">🛡️ <span>Profil Gladiator</span></button>
+  </div>
+</aside>
+<div class="shade" id="shade"></div>
+<main class="main">
+<header class="topbar">
+ <button class="icon mobile" id="openMenu">☰</button>
+ <div><strong id="pageTitle">COLOSSEUM</strong><small id="status">ARENA AKTIF</small></div>
+ <div class="rank">RANK <b id="rankTop">I</b> · <span id="xpTop">0 XP</span></div>
+</header>
+<section class="content" id="content"></section>
+<footer class="composer-wrap" id="composerWrap">
+ <form class="composer" id="composer"><textarea id="input" rows="1" placeholder="Masukkan tantanganmu, Gladiator..."></textarea><button class="send" title="Kirim">⚔</button></form>
+ <div class="hint">Enter = kirim · Shift+Enter = baris baru</div>
+</footer>
+</main></div>
+<script src="/app.js"></script>
+</body>
+</html>
